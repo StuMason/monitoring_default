@@ -1,0 +1,33 @@
+default:
+    suites:
+       default:
+         filters:
+           tags: ~@wip
+         formatter:
+           name:                     pretty
+           parameters:
+             decorated:              true
+             verbose:                false
+             time:                   true
+             language:               en
+             output_path:            null
+             multiline_arguments:    true
+         contexts:
+           - App\Features\FeatureContext:
+               parameters: {bar: foo}
+    extensions:
+      Behat\MinkExtension:
+        base_url: https://example.com
+        default_session: selenium2
+        goutte:
+          guzzle_parameters:
+            curl.options:
+              CURLOPT_SSL_VERIFYPEER: false
+              CURLOPT_CERTINFO: false
+              CURLOPT_TIMEOUT: 120
+            ssl.certificate_authority: false
+        selenium2:
+          wd_host: "http://127.0.0.1:4444/wd/hub"
+          capabilities: { "browserName": "chrome", "browser": "chrome", "version":  "25", 'chrome': {'switches':['--disable-gpu', '--disable-setuid-sandbox', '--ozone-platform=headless', '--ozone-dump-file=/tmp/ozone.png'], 'binary': '/home/forge/behat_screenshot_manager/bin/chrome'}}
+        base_url: 'https://behat.dev/'
+        browser_name: chrome
