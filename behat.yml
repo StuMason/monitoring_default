@@ -12,21 +12,20 @@ default:
              language:               en
              output_path:            null
              multiline_arguments:    true
-       suites:
-           user_features:
-             paths:
-               - "%paths.base%/tests/behat"
-             filters:
-               tags: ~@wip
-             formatter:
-               name:                     pretty
-               parameters:
-                 decorated:              true
-                 verbose:                false
-                 time:                   true
-                 language:               en
-                 output_path:            null
-                 multiline_arguments:    true
+       user_features:
+         paths:
+           - "%paths.base%/tests/behat"
+         filters:
+           tags: ~@wip
+         formatter:
+           name:                     pretty
+           parameters:
+             decorated:              true
+             verbose:                false
+             time:                   true
+             language:               en
+             output_path:            null
+             multiline_arguments:    true
     extensions:
       Behat\MinkExtension:
         base_url: https://example.com
