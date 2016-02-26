@@ -1,1 +1,0 @@
-Your tests for behat will be in this folder
