@@ -14,7 +14,7 @@ default:
              multiline_arguments:    true
        user_features:
          paths:
-           - "%paths.base%/tests/behat"
+           - "%paths.base%/tests"
          filters:
            tags: ~@wip
          formatter:
