@@ -12,9 +12,6 @@ default:
              language:               en
              output_path:            null
              multiline_arguments:    true
-         contexts:
-           - App\Features\FeatureContext:
-               parameters: {bar: foo}
     extensions:
       Behat\MinkExtension:
         base_url: https://example.com
