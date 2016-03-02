@@ -3,4 +3,4 @@
  
    Scenario: Testing Wiki
      Given I am on "http://en.wikipedia.org/wiki/Main_Page"
-     Then I should see "Wiki 6"
+     Then I should see "Welcome to Wikipedia"
