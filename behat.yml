@@ -26,10 +26,10 @@ default:
              language:               en
              output_path:            null
              multiline_arguments:    true
-        broken_suite:
-            paths:    [ %paths.base%/features/web ]
-            filters:  { role: user }
-            contexts: [ FooContext ]
+       broken_suite:
+             paths:    [ %paths.base%/features/web ]
+             filters:  { role: user }
+             contexts: [ FooContext ]
     extensions:
       Behat\MinkExtension:
         base_url: https://example.com
