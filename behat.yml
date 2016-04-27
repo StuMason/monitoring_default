@@ -3,7 +3,7 @@ default:
        default:
          filters:
            tags: ~@wip
-         formatter:
+     foobar    formatter:
            name:                     pretty
            parameters:
              decorated:              true
