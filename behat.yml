@@ -3,7 +3,7 @@ default:
        default:
          filters:
            tags: ~@wip
-         formatter:
+  asdf       formatter:
            name:                     pretty
            parameters:
              decorated:              true
