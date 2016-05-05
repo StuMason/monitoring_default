@@ -2,5 +2,5 @@
  Feature: Testing
  
    Scenario: Testing Wiki
-     Given I am on "http://en.wikipedia.org/wiki/Main_Page"
-     Then I should see "Wiki 6"
+     Given I am on "/"
+     Then I should see "For healthcare professionals only"
