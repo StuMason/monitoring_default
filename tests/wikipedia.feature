@@ -3,7 +3,7 @@
  
    Scenario: Testing Wiki
      Given I am on "/"
-     Then I should see "For healthcare professionals only"
+     Then I should see "This site is intended only for healthcare professionals resident in the United Kingdom"
    Scenario: Testing Wiki II
      Given I am on "/"
-     Then I should see "I confirm that I am a healthcare professional resident in the United Kingdom."
+     Then I should see "sign in"
