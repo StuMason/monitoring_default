@@ -26,6 +26,34 @@ default:
              language:               en
              output_path:            null
              multiline_arguments:    true
+       medical_features:
+         paths:
+           - "%paths.base%/tests"
+         filters:
+           tags: ~@wip
+         formatter:
+           name:                     pretty
+           parameters:
+             decorated:              true
+             verbose:                false
+             time:                   true
+             language:               en
+             output_path:            null
+             multiline_arguments:    true
+       product_features:
+         paths:
+           - "%paths.base%/tests"
+         filters:
+           tags: ~@wip
+         formatter:
+           name:                     pretty
+           parameters:
+             decorated:              true
+             verbose:                false
+             time:                   true
+             language:               en
+             output_path:            null
+             multiline_arguments:    true
        broken_suite:
              paths:    [ %paths.base%/features/web ]
              filters:  { role: user }
