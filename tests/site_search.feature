@@ -1,7 +1,7 @@
 @javascript
- Feature: Testing
+ Feature: Site search
  
-   Scenario: Testing Fail
+   Scenario: Search from homepage
      Given I am on "/"
-     Then I should not see "This site is intended only for healthcare professionals resident in the United Kingdom"
+     Then I should not see "Search_broken"
    
