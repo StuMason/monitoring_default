@@ -3,5 +3,5 @@
  
    Scenario: Search from homepage
      Given I am on "/"
-     Then I should see "Search_broken"
+     Then I should see "Search"
    
