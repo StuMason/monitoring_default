@@ -13,6 +13,8 @@ default:
              output_path:            null
              multiline_arguments:    true
        user_features:
+         contexts: 
+           - Behat\MinkExtension\Context\MinkContext
          paths:
            - "%paths.base%/tests"
          filters:
@@ -27,6 +29,8 @@ default:
              output_path:            null
              multiline_arguments:    true
        medical_features:
+         contexts: 
+           - Behat\MinkExtension\Context\MinkContext         
          paths:
            - "%paths.base%/tests"
          filters:
@@ -41,6 +45,8 @@ default:
              output_path:            null
              multiline_arguments:    true
        product_features:
+         contexts: 
+           - Behat\MinkExtension\Context\MinkContext       
          paths:
            - "%paths.base%/tests"
          filters:
@@ -55,6 +61,8 @@ default:
              output_path:            null
              multiline_arguments:    true
        broken_suite:
+         contexts: 
+           - Behat\MinkExtension\Context\MinkContext       
              paths:    [ %paths.base%/features/web ]
              filters:  { role: user }
              contexts: [ FooContext ]
