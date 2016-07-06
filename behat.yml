@@ -63,9 +63,12 @@ default:
        broken_suite:
          contexts: 
            - Behat\MinkExtension\Context\MinkContext       
-         paths:    [ %paths.base%/features/web ]
-         filters:  { role: user }
-         contexts: [ FooContext ]
+         paths:
+           - "%paths.base%/features/web"
+         filters:
+           - role: user
+         contexts:
+           - FooContext
     extensions:
       Behat\MinkExtension:
         base_url: https://example.com
