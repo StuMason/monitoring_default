@@ -9,7 +9,7 @@ default:
     Behat\MinkExtension:
       browser_name: "chrome"
       selenium2:
-        wd_host: "http://localhost:4444/wd/hub"
+        wd_host: "http://127.0.0.1:4444/wd/hub"
         capabilities:
           browserName: "chrome"
           browser: "chrome"
@@ -19,4 +19,5 @@ default:
               - '--dns-prefetch-disable'
               - '--disable-setuid-sandbox'
               - '--ozone-platform=headless'
+              - '--no-sandbox'
               - '--ozone-dump-file=/tmp/ozone.png'
