@@ -7,6 +7,11 @@ default:
         - features
       contexts:
         - FeatureContext
+    web_features:
+      paths:
+        - features
+      contexts:
+        - FeatureContext
   extensions:
     Behat\MinkExtension:
       browser_name: "chrome"
