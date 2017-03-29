@@ -14,9 +14,15 @@ default:
         - FeatureContext
   extensions:
     Behat\MinkExtension:
+      sessions:
+        default:
+          goutte: ~
+        javacript_session:
+          selenium2: ~
+      default_session: "default"
       browser_name: "chrome"
       selenium2:
-        wd_host: "http://127.0.0.1:4444/wd/hub"
+        wd_host: "http://52.203.166.66:4444/wd/hub"
         capabilities:
           browserName: "chrome"
           browser: "chrome"
