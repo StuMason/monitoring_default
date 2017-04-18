@@ -7,6 +7,11 @@ default:
         - features
       contexts:
         - FeatureContext
+    hcp_polls:
+      paths:
+        - features
+      contexts:
+        - FeatureContext
     web_features:
       paths:
         - features
@@ -14,23 +19,12 @@ default:
         - FeatureContext
   extensions:
     Behat\MinkExtension:
+      base_url: https://en.wikipedia.org/wiki/Main_Page
       sessions:
         default:
           goutte: ~
         javacript_session:
-          selenium2: ~
+          selenium2:
+            wd_host: "http://selenium:4444/wd/hub"
       default_session: "default"
       browser_name: "chrome"
-      selenium2:
-        wd_host: "http://52.203.166.66:4444/wd/hub"
-        capabilities:
-          browserName: "chrome"
-          browser: "chrome"
-          chrome:
-            switches:
-              - '--disable-gpu'
-              - '--dns-prefetch-disable'
-              - '--disable-setuid-sandbox'
-              - '--ozone-platform=headless'
-              - '--no-sandbox'
-              - '--ozone-dump-file=/tmp/ozone.png'
