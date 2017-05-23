@@ -25,6 +25,16 @@ default:
           goutte: ~
         javacript_session:
           selenium2:
+            browser: chrome
+              capabilities:
+                extra_capabilities: {
+                  "chromeOptions": {
+                    perfLoggingPrefs: {
+                      'traceCategories': 'browser,devtools.timeline,devtools,disabled-by-default-devtools.timeline,v8.execute,v8,disabled-by-default-devtools.screenshot,disabled-by-default-devtools.timeline.frame,input,devtools.screenshot,benchmark'
+                    }
+                  },
+                  "loggingPrefs": { "performance": "ALL" }
+                }
             wd_host: "http://selenium:4444/wd/hub"
       default_session: "default"
       browser_name: "chrome"
